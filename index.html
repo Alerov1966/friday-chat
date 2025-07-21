@@ -1,16 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Chat con Friday</title>
   <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.initFull({
       chatflowid: "6c6ccef1-fddc-4f56-91a5-f45b7911c945",
       apiHost: "https://0f5d7e1b0ba0.ngrok-free.app"
     });
   </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      font-family: sans-serif;
+    }
+    flowise-fullchatbot {
+      height: 100vh;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <flowise-fullchatbot></flowise-fullchatbot>
